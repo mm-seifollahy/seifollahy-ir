@@ -1,0 +1,35 @@
+.main-footer {
+  &__upper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icon {
+    filter: invert(65%);
+    margin-right: 1rem;
+  }
+
+  &__lower {
+    direction: ltr;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1rem 0;
+    font-size: 1.2rem;
+    text-align: left;
+    text-align: center;
+
+    a {
+      font-weight: bold;
+      margin-left: 4px;
+    }
+
+    @include respond(tab-port) {
+      padding: 1rem 0;
+    }
+  }
+}
+
+.dark .main-footer {
+  &__icon {
+    filter: invert(0);
+  }
+}

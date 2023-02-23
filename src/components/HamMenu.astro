@@ -1,0 +1,47 @@
+<div class="header__main-ham-menu-cont">
+  <img
+    width="40"
+    src="/icons/ham-menu.svg"
+    alt="منو"
+    class="header__main-ham-menu"
+  />
+  <img
+    width="40"
+    src="/icons/ham-menu-close.svg"
+    alt="بستن منو"
+    class="header__main-ham-menu-close d-none"
+  />
+</div>
+
+<script>
+  const hamMenuBtn = document.querySelector(".header__main-ham-menu-cont");
+  const smallMenu = document.querySelector(".header__nav-sm");
+  const headerHamMenuBtn = document.querySelector(".header__main-ham-menu");
+  const headerHamMenuCloseBtn = document.querySelector(
+    ".header__main-ham-menu-close"
+  );
+  const headerSmallMenuLinks = document.querySelectorAll(".header__nav-sm-li");
+
+  hamMenuBtn.addEventListener("click", () => {
+    if (smallMenu.classList.contains("header__nav-sm--active")) {
+      smallMenu.classList.remove("header__nav-sm--active");
+    } else {
+      smallMenu.classList.add("header__nav-sm--active");
+    }
+    if (headerHamMenuBtn.classList.contains("d-none")) {
+      headerHamMenuBtn.classList.remove("d-none");
+      headerHamMenuCloseBtn.classList.add("d-none");
+    } else {
+      headerHamMenuBtn.classList.add("d-none");
+      headerHamMenuCloseBtn.classList.remove("d-none");
+    }
+  });
+
+  for (let i = 0; i < headerSmallMenuLinks.length; i++) {
+    headerSmallMenuLinks[i].addEventListener("click", () => {
+      smallMenu.classList.remove("header__nav-sm--active");
+      headerHamMenuBtn.classList.remove("d-none");
+      headerHamMenuCloseBtn.classList.add("d-none");
+    });
+  }
+</script>

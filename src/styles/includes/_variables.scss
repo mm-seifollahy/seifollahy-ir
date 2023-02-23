@@ -1,0 +1,25 @@
+:root {
+  --bg-color: #f2f2f2;
+  --bg-color-l1: #e5e5e5;
+  --bg-color-l2: #eee;
+  --bg-pg: #fff;
+  --color: #282828;
+  --color-l1: #6e6e6e;
+  --color-form-label: #666;
+  --l1-shadow-color: rgb(0 0 0 / 2%);
+  --light-bulb-color: #e0c769;
+  --paragraph-link-color: #827717;
+}
+
+.dark {
+  --bg-color: #121212;
+  --bg-color-l1: #222222;
+  --bg-color-l2: #3a3a3a;
+  --bg-pg: #000;
+  --color: #ffffff;
+  --color-l1: #a8a8a8;
+  --color-form-label: rgb(202, 202, 202);
+  --l1-shadow-color: rgb(60 60 60 / 22%);
+  --light-bulb-color: #4f4f4f;
+  --paragraph-link-color: #827717;
+}

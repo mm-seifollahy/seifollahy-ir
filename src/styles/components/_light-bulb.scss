@@ -1,0 +1,31 @@
+&__light-bulb {
+  left: 5em;
+  top: 2em;
+
+  &-icon {
+    background-color: var(--light-bulb-color);
+    display: inline-block;
+    height: 4rem;
+    mask: url('/icons/light-bulb.svg') no-repeat center / contain;
+    -webkit-mask: url('/icons/light-bulb.svg') no-repeat center / contain;
+    vertical-align: middle;
+    width: 4rem;
+    cursor: pointer;
+    transition: opacity .3s;
+    transform: rotate(180deg);
+  }
+
+  &-icon:hover {
+    opacity: 0.6;
+  }
+
+  @include respond(phone) {
+    top: 1em;
+    position: absolute;
+    width: 4rem;
+    height: 4rem;
+    flex: 0 1 auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

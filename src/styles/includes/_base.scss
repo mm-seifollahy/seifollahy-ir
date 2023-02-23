@@ -1,0 +1,83 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  font-family: inherit;
+  direction: rtl;
+}
+
+html {
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+  scroll-behavior: smooth;
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 59%; //1 rem =
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 56%; //1 rem =
+  }
+
+  @include respond(big-desktop) {
+    font-size: 65%; //1rem =
+  }
+}
+
+body {
+  background-color: var(--bg-color);
+  box-sizing: border-box;
+  color: var(--color);
+  font-family: Gandom, sans-serif;
+  font-size: 1.5rem;
+  line-height: 2.5;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+input:focus,
+button:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+main {
+  display: grid;
+  padding: 10rem 1rem 1rem 1rem;
+  min-height: calc(100vh - 20rem);
+  position: relative;
+}
+
+p {
+  text-indent: 3rem;
+}
+
+p a {
+  color: var(--paragraph-link-color);
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--paragraph-link-color);
+}

@@ -1,0 +1,30 @@
+&__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+&__head {
+  justify-self: end;
+}
+
+@include respond(tab-port) {
+  &__wrapper {
+    text-align: center;
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+
+  &__head {
+    justify-self: center;
+  }
+
+  &__content {
+    padding-top: 0;
+  }
+}
+
+@include respond(phone) {
+  &__head {
+    width: 100%;
+  }
+}

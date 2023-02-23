@@ -1,0 +1,21 @@
+&__main-ham {
+
+  &-menu-cont {
+    display: none;
+    width: 4rem;
+    padding: .8rem 0;
+    cursor: pointer;
+
+    @include respond(phone) {
+      display: block;
+    }
+  }
+
+  &-menu {
+    width: 100%;
+  }
+
+  &-menu-close {
+    width: 100%;
+  }
+}

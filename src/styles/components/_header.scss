@@ -1,0 +1,24 @@
+.header {
+  background: var(--bg-color);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+
+  &__content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    @include respond(tab-port) {
+      padding: 0 2rem;
+    }
+
+    @include respond(phone) {
+      justify-content: space-between;
+    }
+  }
+
+  @import 'ham-menu';
+  @import "light-bulb";
+  @import 'nav';
+}

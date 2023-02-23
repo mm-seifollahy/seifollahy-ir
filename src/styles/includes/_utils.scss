@@ -1,0 +1,29 @@
+.container {
+  max-width: 120rem;
+  margin: auto;
+  width: 92%;
+}
+
+.pa-1 {
+  padding: 1rem;
+}
+
+.pa-2 {
+  padding: 2rem;
+}
+
+.ph-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.ph-ph-0 {
+  @include respond(phone) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.d-none {
+  display: none;
+}

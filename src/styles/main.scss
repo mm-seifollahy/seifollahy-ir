@@ -1,0 +1,14 @@
+/*-------- tools --------*/
+@import 'includes/variables';
+@import 'includes/mixins';
+@import 'includes/fonts';
+@import 'includes/base';
+@import 'includes/utils';
+
+/*-------- pages --------*/
+@import 'pages/index';
+@import 'pages/contact';
+
+/*-------- components --------*/
+@import 'components/header';
+@import 'components/footer';

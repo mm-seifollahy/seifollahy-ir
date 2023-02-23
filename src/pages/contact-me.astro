@@ -1,0 +1,63 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout
+  title="تماس بامن | محمد مجتبی سیف اللهی"
+  desc="شما می توانید از طریق این صفحه با من در ارتباط باشید"
+>
+  <section class="contact container">
+    <div class="contact__wrapper">
+      <div class="contact__head">
+        <h1>تماس با من</h1>
+        <p>
+          برای تماس با من می توانید از طریق شبکه های اجتماعی که در انتهای همین
+          صفحه هست استفاده کنید و یا از طریق این فرم به صورت مستقیم برای من
+          ایمیل ارسال کنید:
+        </p>
+      </div>
+      <div class="contact__content ph-2 ph-ph-0">
+        <div class="contact__form-container">
+          <form action="#" class="contact__form">
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="name">نام</label>
+              <input
+                id="name"
+                name="name"
+                required
+                placeholder="لطفا نام خود را وارد کنید"
+                type="text"
+                class="contact__form-input"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="email">آدرس ایمیل</label>
+              <input
+                id="email"
+                name="email"
+                required
+                placeholder="لطفا آدرس ایمیل خود را وارد کنید"
+                type="text"
+                class="contact__form-input"
+              />
+            </div>
+            <div class="contact__form-field">
+              <label class="contact__form-label" for="message">پیام</label>
+              <textarea
+                id="message"
+                name="message"
+                required
+                cols="30"
+                rows="6"
+                class="contact__form-input"
+                placeholder="لطفا پیام خود را وارد کنید"></textarea>
+            </div>
+            <button type="submit" class="btn btn--theme contact__btn">
+              ثبت
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
